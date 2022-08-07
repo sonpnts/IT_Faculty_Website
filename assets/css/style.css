@@ -2,25 +2,50 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Myfont;
 }
-.icon-home{
-  padding-right: 4px;
+:root {
+  --bg: #ccc;
+}
+@font-face {
+  font-family: Myfont;
+  src: url(../font/Nunito-font/Nunito-VariableFont_wght.ttf);
+}
+.icon-home {
+  margin-right: 7px;
   font-size: 19px;
 }
+.icon {
+  margin-left: 7px;
+}
+
 #header {
   display: flex;
-  background: url(/assets/img/doanhoikhoa.jpg)
+  background: url(https://rraw.githubusercontent.com/sonpnts/tuyensinh/f36960ed4b392662c9190330259a552f9271677b/assets/img/doanhoikhoa.jpg)
     center/ cover no-repeat;
-  height: 400px;
+}
+.flex {
+  display: flex;
+}
+.v-ali {
+  justify-content: center;
 }
 
 .header-menu {
-  margin: 0 10%;
+  width: 100%;
+  background-color: #fff;
+}
+.header-menu > div {
+  justify-content: space-around;
+}
+.header-menu img.logo {
+  width: 150px;
+  margin-left: 120px;
 }
 ul.menu {
+  margin-top: 50px;
   display: flex;
   list-style-type: none;
-  position: relative;
 }
 
 #header .header-img {
@@ -29,19 +54,19 @@ ul.menu {
 ul.menu > li > a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: #4E6044;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   padding: 18px 28px;
 }
 .menu > li:hover {
-  background-color: blue;
-  display: block !important;
+  border-radius: 5px;
+  background-color: #FFB85F;
 }
 
 #header .sub-nav ul {
-  background-color: #ccc;
+  background-color: rgb(12, 53, 27);
 }
 .menu li:hover .sub-nav {
   display: block;
@@ -49,45 +74,68 @@ ul.menu > li > a {
 ul.sub-nav {
   display: none;
   width: 230px;
+  box-shadow: 1px 1px 15px rgb(0 0 0 / 20%);
 }
 ul.sub-nav {
   position: absolute;
   list-style-type: none;
+
+}
+ul.sub-nav li:first-child
+{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+ul.sub-nav li:last-child
+{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 ul.sub-nav a {
   text-decoration: none;
   display: block;
   text-decoration: none;
-  color: white;
+  color: #000;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   padding: 18px 0;
 }
 ul.sub-nav li:hover a {
-  background-color: blue;
+  background-color: #FFB85F;
+  color: black;
 }
 .sub-nav li {
-  background-color: #ccc;
+  background-color: #fff;
   text-align: center;
+  padding: 12px 0;
 }
+
 .footer {
   background-color: #bd8f8fe6;
   display: flex;
 }
 
-.footer .logo-cntt img{
+.footer .logo-cntt img {
   width: 165px;
-
 }
 .footer .footer-icon {
   max-width: 100%;
   display: block;
   margin-top: 12px;
 }
+.icon-footer
+{
+  font-size: 52px;
+  color: #FFF;
+}
+.footer-icon > a
+{
+  text-decoration: none;
+}
 .footer .part-footer {
   width: calc(100% / 2);
-  padding: 30px 0px 30px 30px
+  padding: 30px 0px 30px 30px;
 }
 .footer .head {
   font-size: 20px;
@@ -107,7 +155,7 @@ ul.sub-nav li:hover a {
 .footer .footer-main {
   margin-top: 12px;
 }
-.footer .sub-heading p{
+.footer .sub-heading p {
   padding-top: 12px;
 }
 .border-bottom {
@@ -115,4 +163,13 @@ ul.sub-nav li:hover a {
   height: 3px;
   opacity: 0.8;
   background-color: #fffeffe6;
+}
+@keyframes info {
+  form {
+    top: 100%;
+  }
+  to {
+    top: 0%;
+  }
+  opacity: 0.6;
 }
