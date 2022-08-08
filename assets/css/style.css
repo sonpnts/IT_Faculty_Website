@@ -105,6 +105,7 @@ ul.sub-nav a {
 ul.sub-nav li:hover a {
   background-color: #ffb85f;
   color: black;
+  border-bottom: 1px solid #50afb0;
 }
 .sub-nav li {
   background-color: #fff;
