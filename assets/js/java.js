@@ -15,8 +15,20 @@ $(document).ready(function(){
         $("#video-yt").remove();
     });
     $(".animate__animated").hover(function(){
-        $(this).addClass("animate__bounceIn");
+        $(this).addClass("animate__bounce");
     }, function(){
-        $(this).removeClass("animate__bounceIn");
+        $(this).removeClass("animate__bounce");
     })
+    $(window).scroll(function(){
+        if($(this).scrollTop()){
+            $(".backtop").fadeIn();
+        }else{
+            $(".backtop").fadeOut();
+        }
+    })
+    $(".backtop").click(function(){
+        $('html,body').animate({
+            scrollTop:0
+        },500);
+    });
 });
