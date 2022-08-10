@@ -22,7 +22,23 @@
 .icon-header {
   margin-left: 7px;
 }
+.menu-scroll{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  background-color: #20a0a2;
+  z-index: 10001;
+  display: none;
+}
+.menu-scroll ul.menu{
 
+  margin-top: 0 !important;
+  justify-content: center;
+}
+.menu-scroll ul.menu > li > a{
+  color: white !important;
+}
 #header {
   display: flex;
   /* background: url(https://raw.githubusercontent.com/sonpnts/tuyensinh/f36960ed4b392662c9190330259a552f9271677b/assets/img/doanhoikhoa.jpg)
@@ -37,7 +53,7 @@
 
 .header-menu {
   width: 100%;
-  background-color: #fff;
+  background-color: #eff0ff;
 }
 .header-menu > div {
   justify-content: space-around;
@@ -250,6 +266,7 @@ div.notice-part ul.list li:last-child {
   text-align: right;
   display: block;
   margin: 5px;
+  color: #94430e;
 }
 div.icon-content {
   top: 15px;
@@ -273,7 +290,6 @@ div.icon-content {
   margin: 2%;
 }
 .link div.items{
-  /* align-items: center; */
   justify-content: center;
   flex-wrap: wrap;
   background-color: rgb(255, 255, 255);
@@ -305,7 +321,7 @@ div.icon-content {
   margin-top: 12px;
 }
 .icon-footer {
-  font-size: 52px;
+  font-size: 31px;
   color: #fff;
 }
 .footer-icon > a {
@@ -372,8 +388,8 @@ div.icon-content {
   43% {
     -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -18px, 0) scaleY(1.1);
-    transform: translate3d(0, -18px, 0) scaleY(1.1);
+    -webkit-transform: translate3d(0, -15px, 0) scaleY(1.1);
+    transform: translate3d(0, -15px, 0) scaleY(1.1);
   }
   70% {
     -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);

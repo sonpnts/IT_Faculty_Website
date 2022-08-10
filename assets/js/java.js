@@ -31,4 +31,13 @@ $(document).ready(function(){
             scrollTop:0
         },500);
     });
+    $(window).scroll(function(){
+        if($(this).scrollTop()){
+            $(".menu-scroll").fadeIn();
+            $("#header").fadeOut();
+        }else{
+            $(".menu-scroll").fadeOut();
+            $("#header").fadeIn();
+        }
+    })
 });
