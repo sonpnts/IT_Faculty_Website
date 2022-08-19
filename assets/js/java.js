@@ -1,22 +1,6 @@
 $(document).ready(function(){
     $(".next").click(function(){
-        var slide_next = $(".active").next(); 
-        if(slide_next.length!=0){
-            $(".active").addClass("endtoleft").one("webkitAnimationEnd",function(){
-                $(".endtoleft").removeClass("endtoleft").removeClass("active");
-            })
-            slide_next.addClass("active").addClass("starttoright").one("webkitAnimationEnd",function()
-            {
-                (".starttoright").removeClass("starttoright");
-            });
-        }else{
-            $(".active").addClass("endtoleft").one("webkitAnimationEnd",function(){
-                $(".endtoleft").removeClass("endtoleft").removeClass("active");
-            })
-            $(".slide:first-child").addClass("active").addClass("starttoright").one("webkitAnimationEnd",function(){
-                $(".starttoright").removeClass("starttoright")
-            })
-        }
+        slide();
     })
     $(".pre").click(function(){
         var slide_pre = $(".active").prev(); 
@@ -38,9 +22,9 @@ $(document).ready(function(){
         }
         
     })
-    setInterval(slide,2000);
+    setInterval(slide,3000);
     function slide(){
-             var slide_next = $(".active").next(); 
+        var slide_next = $(".active").next(); 
         if(slide_next.length!=0){
             $(".active").addClass("endtoleft").one("webkitAnimationEnd",function(){
                 $(".endtoleft").removeClass("endtoleft").removeClass("active");
@@ -78,10 +62,13 @@ $(document).ready(function(){
     $(window).scroll(function(){
         if($(this).scrollTop()){
             $(".menu-scroll").fadeIn();
-            $("#header").fadeOut();
+    
         }else{
             $(".menu-scroll").fadeOut();
-            $("#header").fadeIn();
+           
         }
+    })
+    $("#bar").click(function(){
+        $("ul.menu").slideToggle();
     })
 });

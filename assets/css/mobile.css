@@ -1,0 +1,81 @@
+#bar {
+  display: block;
+}
+.footer,
+ul.menu {
+  flex-direction: column;
+}
+ul.menu,
+img.logo,
+.menu-scroll {
+  display: none;
+}
+ul.menu a,
+.new ul.list a {
+  font-size: 12px !important;
+}
+ul.menu a {
+  text-align: center;
+}
+ul.menu {
+    margin-top: 0px;
+}
+.button-slide .next {
+  top: 9%;
+  position: absolute;
+  right: 1%;
+}
+.button-slide .pre {
+  top: 9%;
+  position: absolute;
+  left: 1%;
+}
+.button-slide {
+  z-index: 10;
+  cursor: pointer;
+  font-size: 42px;
+  opacity: 0.6;
+}
+
+.slide-img {
+  height: 250px;
+}
+.date-time {
+  width: 66px;
+  height: 50px;
+}
+.date-time div.month {
+  font-size: 11px;
+  padding: 5px 0;
+}
+.date-time div.day {
+  font-size: 17px;
+}
+.date-time div.year {
+  font-size: 13px;
+}
+.new div.sub-new {
+  margin-top: -22px;
+}
+div.notice {
+  flex-direction: column;
+}
+div.notice > div {
+  width: 95%;
+}
+div.notice .topic {
+  font-size: 19px;
+}
+.notice-part ul.list a,
+.footer .head,
+.sub-heading {
+  font-size: 15px;
+}
+.icon-hand,
+.footer .head {
+  font-size: 18px;
+}
+.footer .part-footer {
+  width: 95%;
+  padding: 30px 0px 3px 30px;
+}
