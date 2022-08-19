@@ -62,13 +62,12 @@ $(document).ready(function(){
     $(window).scroll(function(){
         if($(this).scrollTop()){
             $(".menu-scroll").fadeIn();
-    
         }else{
             $(".menu-scroll").fadeOut();
-           
         }
     })
     $("#bar").click(function(){
         $("ul.menu").slideToggle();
+        $(".menu-scroll").hide();
     })
 });

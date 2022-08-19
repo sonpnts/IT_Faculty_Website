@@ -5,9 +5,11 @@
 ul.menu {
   flex-direction: column;
 }
+.menu-scroll{
+    display: none !important;
+}
 ul.menu,
-img.logo,
-.menu-scroll {
+img.logo {
   display: none;
 }
 ul.menu a,
