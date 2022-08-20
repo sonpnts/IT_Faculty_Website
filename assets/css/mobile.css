@@ -23,12 +23,12 @@ ul.menu {
     margin-top: 0px;
 }
 .button-slide .next {
-  top: 9%;
+  top: 30%;
   position: absolute;
   right: 1%;
 }
 .button-slide .pre {
-  top: 9%;
+  top: 30%;
   position: absolute;
   left: 1%;
 }
@@ -40,7 +40,7 @@ ul.menu {
 }
 
 .slide-img {
-  height: 250px;
+  height: 190px;
 }
 .date-time {
   width: 66px;
@@ -62,6 +62,9 @@ ul.menu {
 div.notice {
   flex-direction: column;
 }
+.new > div.topic:after {
+  width: 11%;
+}
 div.notice > div {
   width: 95%;
 }
@@ -69,9 +72,11 @@ div.notice .topic {
   font-size: 19px;
 }
 .notice-part ul.list a,
-.footer .head,
-.sub-heading {
+.sub-heading,.link div.heading {
   font-size: 15px;
+}
+.link div.item {
+  width: 18%;
 }
 .icon-hand,
 .footer .head {
@@ -80,4 +85,9 @@ div.notice .topic {
 .footer .part-footer {
   width: 95%;
   padding: 30px 0px 3px 30px;
+}
+.footer-license {
+  font-size: 13px;
+  background-color: #2f2923;
+  color: #fff;
 }

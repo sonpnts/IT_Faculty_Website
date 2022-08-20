@@ -1,8 +1,5 @@
 $(document).ready(function(){
-    $(".next").click(function(){
-        slide();
-    })
-    $(".pre").click(function(){
+    function slide_Left(){
         var slide_pre = $(".active").prev(); 
         if(slide_pre.length!=0){
             $(".active").addClass("endtoright").one("webkitAnimationEnd",function(){
@@ -20,10 +17,9 @@ $(document).ready(function(){
                 $(".starttoleft").removeClass("starttoleft")
             });
         }
-        
-    })
-    setInterval(slide,3000);
-    function slide(){
+    }
+    function slide_right()
+    {
         var slide_next = $(".active").next(); 
         if(slide_next.length!=0){
             $(".active").addClass("endtoleft").one("webkitAnimationEnd",function(){
@@ -42,6 +38,13 @@ $(document).ready(function(){
             })
         }
     }
+    $(".pre").click(function(){
+        slide_Left();
+    })
+    $(".next").click(function(){
+        slide_right();
+    })
+    setInterval(slide_right,3000);
     $(".animate__animated").hover(function(){
         $(this).addClass("animate__bounce");
     }, function(){
