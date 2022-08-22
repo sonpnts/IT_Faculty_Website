@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    setTimeout(function(){
+        $(".load-bg").css("display","none");
+        $(".body").css("display","block");
+    },2000)
     function slide_Left(){
         var slide_pre = $(".active").prev(); 
         if(slide_pre.length!=0){

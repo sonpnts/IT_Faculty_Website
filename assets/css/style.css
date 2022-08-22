@@ -4,7 +4,63 @@
   padding: 0;
   font-family: Myfont;
 }
+.body{
+  display:none;
+}
+load-bg {
+  position: relative;
+  background: #ecf0f1;
+  width: 100%;
+  z-index: 1000;
+}
+.load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width: 100px;
+  height: 100px;
+}
+.load hr {
+  margin: 0;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  border-radius: 50%;
+  animation: spin 2s ease infinite;
+}
+.load :first-child {
+  background: #19a68c;
+  animation-delay: -1.5s;
+}
+.load :nth-child(2) {
+  background: #f63d3a;
+  animation-delay: -1s;
+}
+.load :nth-child(3) {
+  background: #fda543;
+  animation-delay: -0.5s;
+}
+.load :last-child {
+  background: #193b48;
+}
 
+@keyframes spin {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(160%);
+  }
+  50% {
+    transform: translate(160%, 160%);
+  }
+  75% {
+    transform: translate(0, 160%);
+  }
+}
 .clear {
   clear: both;
 }
@@ -40,8 +96,6 @@
 }
 #header {
   display: flex;
-  /* background: url(https://raw.githubusercontent.com/sonpnts/tuyensinh/f36960ed4b392662c9190330259a552f9271677b/assets/img/doanhoikhoa.jpg)
-    center/ cover no-repeat; */
 }
 .flex {
   display: flex;
@@ -61,7 +115,7 @@
   width: 150px;
   margin-left: 120px;
 }
-#bar{
+#bar {
   font-size: 24px;
   padding: 10px;
   background-color: #ccc;
