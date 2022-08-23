@@ -48,7 +48,7 @@ $(document).ready(function(){
     $(".next").click(function(){
         slide_right();
     })
-    setInterval(slide_right,3000);
+    // setInterval(slide_right,3000);
     $(".animate__animated").hover(function(){
         $(this).addClass("animate__bounce");
     }, function(){
