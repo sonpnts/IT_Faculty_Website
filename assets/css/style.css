@@ -208,6 +208,7 @@ ul.sub-nav li:hover a {
   visibility: hidden;
 }
 .slide.active {
+  witdh:100%;
   opacity: 1;
   visibility: visible;
 }
